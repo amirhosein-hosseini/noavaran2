@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "regular";
+    src: url("../assets/fonts/YekanBakh-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "bold";
+    src: url("../assets/fonts/YekanBakh-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "ex-bold";
+    src: url("../assets/fonts/YekanBakh-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "light";
+    src: url("../assets/fonts/YekanBakh-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "ex-black";
+    src: url("../assets/fonts/YekanBakh-ExtraBlack.woff2") format("woff2");
+}
+@font-face {
+    font-family: "semi-bold";
+    src: url("../assets/fonts/YekanBakh-SemiBold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "sregular";
+    src: url("../assets/fonts/SFUIText-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "slight";
+    src: url("../assets/fonts/SFUIText-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "sbold";
+    src: url("../assets/fonts/SFUIText-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "smedium";
+    src: url("../assets/fonts/SFUIText-Medium.woff") format("woff");
+}
+
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    background: linear-gradient(180deg, rgba(13, 66, 255, 0.64) 0.35%, #01124D 96.4%);
+}
+
+
+
+.header-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.header-icons ul{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.language{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 22px;
+}
+.language .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.language .item.en{
+    gap: 10px;
+    margin-top: 5px;
+}
+.language .item p{
+    font-family: "semi-bold";
+    font-size: 11px;
+    color: white;
+}
+@media only screen and (max-width:768px){
+    .logo{
+        display: none;
+    }
+    .header-icons ul{
+        gap: 8px;
+    }
+    .header-icons ul li img{
+        width: 20px;
+        height: 20px;
+    }
+    .language{
+        gap: 3px;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(13, 66, 255, 0.64) -19.04%, #01124D 96.71%);
+
+    position: relative;
+}
+.footer-looper{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.footer-looper img{
+    width: 100vw;
+    max-height: 930px;
+}
+.footer-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 139px;
+    padding-bottom: 80px;
+    z-index: 2;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-top{
+    text-align: center;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-first-title{
+    font-family: "regular";
+    font-size: 14px;
+    color: white;
+}
+.footer-second-title{
+    font-family: "bold";
+    font-size: 50px;
+    color: white;
+    margin-top: 16px;
+}
+.footer-button{
+    display: flex;
+    width: 219.328px;
+    height: 58.097px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: transparent;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 17px;
+    font-family: "bold";
+    font-style: 21px;
+    color: white;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-reserve{
+    font-family: "regular";
+    font-size: 16px;
+    color: white;
+}
+.footer-pages{
+    display: flex;
+    gap: 30px;
+}
+.footer-pages a{
+    font-family: "regular";
+    font-size: 16px;
+    color: white;
+}
+.footer-social{
+    display: flex;
+    gap: 20px;
+}
+.footer-addresses{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+.footer-address{
+    display: flex;
+    text-align: right;
+    direction: rtl;
+    gap: 25px;
+}
+.footer-address p{
+    font-family: "regular";
+    font-size: 15px;
+    color: white;
+}
+.footer-telephones{
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    gap: 10px;
+    margin-top: 40px;
+}
+.footer-telephone{
+    display: flex;
+    gap: 25px;
+}
+.footer-telephone img{
+    width: 18px;
+    height: 18px;
+}
+.footer-telephone p{
+    font-family: "regular";
+    font-size: 17px;
+    color: white;
+}
+@media only screen and (max-width:768px){
+    .footer-bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
